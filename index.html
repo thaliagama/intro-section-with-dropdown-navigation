@@ -1,26 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
   <title>Intro section with dropdown navigation</title>
 
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@200;300;400;600&display=swap');
 
-    body{
+    body {
       font-family: 'Epilogue';
     }
 
-    .title{
+    .title {
       font-size: 4.5em;
       color: black;
       line-height: 0.8;
     }
 
-    .btn-learn-more{
+    .btn-learn-more {
       font-size: 1em;
       width: 120px;
       font-weight: bold;
@@ -31,27 +33,49 @@
       padding: 10px;
     }
 
-    p{
+    .btn-learn-more:hover{
+      background-color: blueviolet;
+    }
+    p {
       color: grey;
     }
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+
+    .btn-register{
+      border: 1px solid black;
+      color: black;
+    }
+
+    .btn-register:hover{
+      background-color: blueviolet;
+    }
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
+
 <body>
 
   <main>
     <nav class="navbar navbar-expand-lg bg-body p-3">
       <div class="container-fluid">
         <a class="navbar-brand" href="#"><img src="./images/logo.svg" alt="logo"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-               Features
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Features
               </a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#"><img src="./images/icon-todo.svg" alt=""> Todo List</a></li>
@@ -59,60 +83,65 @@
                 <li><a class="dropdown-item" href="#"><img src="./images/icon-reminders.svg" alt=""> Reminders</a></li>
                 <li><a class="dropdown-item" href="#"><img src="./images/icon-planning.svg" alt=""> Planning</a></li>
               </ul>
-              </li>
+            </li>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-               Company
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Company
               </a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">History</a></li>
                 <li><a class="dropdown-item" href="#">Our Team</a></li>
               </ul>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Careers</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Careers</a>
             </li>
-            <form class="d-flex">
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            </li>
+            <li class="nav-item d-flex">
               <a class="nav-link" href="#">Login</a>
-              <button class="btn btn-outline-success" type="submit">Register</button>
-            </form>
+              <button class="btn btn-outline-success ms-1 btn-register">Register</button>
+            </li>
           </ul>
         </div>
       </div>
     </nav>
-   
+
     <section class="container">
       <div class="row align-items-center">
-        <div class="col-md-7 col-sm-12 order-md-1 order-sm-2 order-2">
+        <div class="col-md-8 col-sm-12 order-md-1 order-sm-2 order-2">
           <h1 class="title fw-bold mb-4">Make<br>
-             remote work</h1>
-          <p class="col-md-7 col-sm-12 mb-5 fw-bold">
+            remote work</h1>
+          <p class="col-md-7 col-sm-12 mb-3 fw-bold">
             Get your team in sync, no matter your location. Streamline processes,
             create team rituals, and watch productivity soar.
           </p>
-          <button class="btn-learn-more">Learn more</button>
+          <button class="btn-learn-more mb-2">Learn more</button>
         </div>
-        <img src="./images/image-hero-desktop.png" alt="" class="img-fluid col-md-4 col-sm-12 order-md-2 order-1 order-xs-1">
+        <img src="./images/image-hero-desktop.png" alt=""
+          class="img-fluid col-md-4 col-sm-12 order-md-2 order-1 order-xs-1 mb-4">
       </div>
-      <div>
-        <span class="pe-4"><img src="./images/client-databiz.svg" alt=""></span>
-        <span class="pe-4"><img src="./images/client-audiophile.svg" alt=""></span>
-        <span class="pe-4"><img src="./images/client-meet.svg" alt=""></span>
-        <span class="pe-4"><img src="./images/client-maker.svg" alt=""></span>
+      <div class="container mb-4">
+            <span class=" pe-4"><img src="./images/client-databiz.svg" alt=""></span>
+            <span class=" pe-4"><img src="./images/client-audiophile.svg" alt=""></span>
+            <span class=" pe-4"><img src="./images/client-meet.svg" alt=""></span>
+            <span class=" pe-4"><img src="./images/client-maker.svg" alt=""></span>
       </div>
-     </section>
+    </section>
 
   </main>
-  
+
   <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="https://github.com/thaliagama" target="_blank">Thalia Gama</a>.
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
